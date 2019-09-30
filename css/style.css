@@ -8,7 +8,7 @@ body
 #encabezado 
 {
     width               : 25%;
-    height              : 40%px;
+    height              : 40%;
     padding             : 5px;
     margin-left         : auto;
     margin-right        : auto;
@@ -31,7 +31,7 @@ body
     margin-left         : auto;
     margin-right        : auto;
     border-radius       : 15px; 
-
+    
 }
 
 p
@@ -39,4 +39,40 @@ p
     font-family         : 'Courier New', Courier, monospace; 
     color               : black;  
     text-align          : center;
+}
+#resultado{
+    background-color    : white;
+    margin-left         : auto;
+    margin-right        : auto;
+    text-align          : center;
+    padding             : 2%;
+    width               : 80%; 
+    border-radius       : 15px; 
+    
+    
+
+
+}
+#resultadoImagen{
+
+    width               : 80%;
+    height              : 0%;
+    margin-left         : auto;
+    margin-right        : auto;
+    padding             : 2%;
+    background-color    : black;
+    border-radius       : 15px;
+    
+
+}
+
+#imagen{
+      
+    object-fit          : cover;
+    border-radius       : 30%; 
+    margin-left: auto;
+    margin-right: auto;
+     display: block;
+    
+
 }

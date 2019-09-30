@@ -36,7 +36,7 @@ function mostrarResultado(nombre,pesoIdeal,estadoPeso){
 	elemento.innerHTML = "El peso ideal de "+ nombre +" es "+ pesoIdeal +". Su estado de peso es <b>"+ estadoPeso +"</b>";
 	
 	var contenedorImagen = document.getElementById('resultadoImagen');
-	contenedorImagen.innerHTML ="<img src='img/"+ imagen + "'>";
+	contenedorImagen.innerHTML ="<img  id='imagen'src='img/"+ imagen + "'>";
 	
 
 }
