@@ -15,8 +15,8 @@
     <div id="encabezado"><img src="img/logo-inacap.jpg"></div>
         <div id="formulario">
           <p>Cálculo del peso ideal en niños.</p>
-              <table width="450" border="0">
-                <tbody>
+              <table width="450" border="0" align="center">
+                <tbody >
                     <tr>
                       <td>Nombre</td>
                       <td><input type="text" id="txt_nombre" name="txt_nombre" placeholder="¿Cuál es tu nombre?"  maxlength="15"></td>
@@ -29,12 +29,10 @@
                       <td>Peso Actual</td>
                       <td><input type="text" id="txt_peso_actual" name="txt_peso_actual" placeholder="¿Cuanto pesas?" maxlength="2"></td>
                     </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td><input type="button" id="btn_calcular" value="Calcular" onClick="capturarDatos();"></td>
-                    </tr>
+                  
                   </tbody>
             </table>
+            <input type="button" id="btn_calcular" value="Calcular" onClick="capturarDatos();">
         </div>
         <br>
     <div id="resultado"></div>
