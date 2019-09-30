@@ -1,22 +1,22 @@
 // JavaScript Document
 //Calcular el peso ideal
-var imagen="";
-function calcularPesoIdeal(edad){
-	var edadIngresada 	= edad;
-	var pesoIdeal		= edadIngresada * 2 + 8 ; 
-	return pesoIdeal;
-}
+let imagen="";
+// function calcularPesoIdeal(edad){
+// 	const edadIngresada 	= edad;
+// 	const pesoIdeal		= edadIngresada * 2 + 8 ; 
+// 	return pesoIdeal;
+// }
 function capturarDatos(){
-	var nombre		= document.getElementById('txt_nombre').value;
-	var edad			= document.getElementById('txt_edad').value;
-	var pesoActual 	= document.getElementById('txt_peso_actual').value;
-	var pesoIdeal	= calcularPesoIdeal(edad);
-	var estadoPeso	= determinarEstadoPeso(pesoActual,pesoIdeal);
+	const nombre		= document.getElementById('txt_nombre').value;
+	const edad			= document.getElementById('txt_edad').value;
+	const pesoActual 	= document.getElementById('txt_peso_actual').value;
+	const pesoIdeal	= calcularPesoIdeal(edad);
+	const estadoPeso	= determinarEstadoPeso(pesoActual,pesoIdeal);
 	mostrarResultado(nombre,pesoIdeal,estadoPeso);
 	
 }
 function determinarEstadoPeso(pesoActual,pesoIdeal){
-	var estadoPeso="";
+	let estadoPeso="";
 	if(pesoActual == pesoIdeal){
 		estadoPeso	= "Peso ideal";
 		imagen 		= "emoji-peso-ideal.png";
@@ -32,10 +32,10 @@ function determinarEstadoPeso(pesoActual,pesoIdeal){
 	return estadoPeso;
 }
 function mostrarResultado(nombre,pesoIdeal,estadoPeso){
-	var elemento = document.getElementById('resultado');
+	let elemento = document.getElementById('resultado');
 	elemento.innerHTML = "El peso ideal de "+ nombre +" es "+ pesoIdeal +". Su estado de peso es <b>"+ estadoPeso +"</b>";
 	
-	var contenedorImagen = document.getElementById('resultadoImagen');
+	let contenedorImagen = document.getElementById('resultadoImagen');
 	contenedorImagen.innerHTML ="<img  id='imagen'src='img/"+ imagen + "'>";
 	
 
