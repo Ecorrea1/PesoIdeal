@@ -4,36 +4,38 @@
 
 <script src="js/funciones.js"></script>
 
+<link rel="stylesheet" href="css/style.css" >
+
 <meta charset="UTF-8">
 <title>Cálculo del peso ideal en niños.</title>
 </head>
 
 <body>
-<div id="encabezado"><img src="img/logo-inacap.jpg"></div>
-<div id="formulario">
-  <p>Cálculo del peso ideal en niños.</p>
-  <table width="450" border="0">
-  <tbody>
-    <tr>
-      <td>Nombre</td>
-      <td><input type="text" id="txt_nombre" name="txt_nombre" placeholder="¿Cuál es tu nombre?"  maxlength="15"></td>
-    </tr>
-    <tr>
-      <td>Edad</td>
-      <td><input type="text" id="txt_edad" name="txt_edad" placeholder="¿Cuál es tu edad?" maxlength="2"> </td>
-    </tr>
-    <tr>
-      <td>Peso Actual</td>
-      <td><input type="text" id="txt_peso_actual" name="txt_peso_actual" placeholder="¿Cuanto pesas?" maxlength="2"></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><input type="button" id="btn_calcular" value="Calcular" onClick="capturarDatos();"></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-<div id="resultado"></div>
-<div id="resultadoImagen"></div>
+    <div id="encabezado"><img src="img/logo-inacap.jpg"></div>
+        <div id="formulario">
+          <p>Cálculo del peso ideal en niños.</p>
+              <table width="450" border="0">
+                <tbody>
+                    <tr>
+                      <td>Nombre</td>
+                      <td><input type="text" id="txt_nombre" name="txt_nombre" placeholder="¿Cuál es tu nombre?"  maxlength="15"></td>
+                    </tr>
+                    <tr>
+                      <td>Edad</td>
+                      <td><input type="text" id="txt_edad" name="txt_edad" placeholder="¿Cuál es tu edad?" maxlength="2"> </td>
+                    </tr>
+                    <tr>
+                      <td>Peso Actual</td>
+                      <td><input type="text" id="txt_peso_actual" name="txt_peso_actual" placeholder="¿Cuanto pesas?" maxlength="2"></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td><input type="button" id="btn_calcular" value="Calcular" onClick="capturarDatos();"></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    <div id="resultado"></div>
+    <div id="resultadoImagen"></div>
 </body>
 </html>
