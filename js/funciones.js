@@ -8,9 +8,9 @@ let imagen="";
 // }
 function capturarDatos(){
 	const nombre		= document.getElementById('txt_nombre').value;
-	const edad			= document.getElementById('txt_edad').value;
+	const edad		= document.getElementById('txt_edad').value;
 	const pesoActual 	= document.getElementById('txt_peso_actual').value;
-	const pesoIdeal	= calcularPesoIdeal(edad);
+	const pesoIdeal		= calcularPesoIdeal(edad);
 	const estadoPeso	= determinarEstadoPeso(pesoActual,pesoIdeal);
 	mostrarResultado(nombre,pesoIdeal,estadoPeso);
 	
