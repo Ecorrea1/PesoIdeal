@@ -1,11 +1,7 @@
 // JavaScript Document
 //Calcular el peso ideal
 let imagen="";
-// function calcularPesoIdeal(edad){
-// 	const edadIngresada 	= edad;
-// 	const pesoIdeal		= edadIngresada * 2 + 8 ; 
-// 	return pesoIdeal;
-// }
+
 function capturarDatos(){
 	const nombre		= document.getElementById('txt_nombre').value;
 	const edad		= document.getElementById('txt_edad').value;
@@ -14,6 +10,11 @@ function capturarDatos(){
 	const estadoPeso	= determinarEstadoPeso(pesoActual,pesoIdeal);
 	mostrarResultado(nombre,pesoIdeal,estadoPeso);
 	
+}
+function calcularPesoIdeal(edad){
+ 	const edadIngresada 	= edad;
+ 	const pesoIdeal		= edadIngresada * 2 + 8 ; 
+ 	return pesoIdeal;
 }
 function determinarEstadoPeso(pesoActual,pesoIdeal){
 	let estadoPeso="";
